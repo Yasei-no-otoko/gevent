@@ -1,12 +1,6 @@
 ---
-name: luma-connpass-event
-description: |
-  Create gstack Luma and connpass event pages from event details, including timetable sections.
-  Use when the user asks to make, draft, publish, or update an event page on Luma,
-  connpass, lu.ma, or connpass.com from structured or rough event information;
-  when they want Browser Use, browser-harness, webwright, or a logged-in browser
-  session used for event-page creation; or when they need the same event mirrored
-  across Luma and connpass.
+name: event-creator
+description: Create gstack Luma and connpass event pages from event details, including timetable sections.
 triggers:
   - "Luma event"
   - "Lumaイベント"
@@ -18,8 +12,19 @@ triggers:
   - "ログイン済みLuma"
   - "mirror this meetup to both Luma and connpass"
 ---
+<!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
+<!-- Regenerate: bun run gen:skill-docs -->
 
-# Luma Connpass Event
+
+## When to invoke this skill
+
+Use when the user asks to make, draft, publish, or update an event page on Luma,
+connpass, lu.ma, or connpass.com from structured or rough event information;
+when they want Browser Use, browser-harness, webwright, or a logged-in browser
+session used for event-page creation; or when they need the same event mirrored
+across Luma and connpass.
+
+# Event Creator
 
 ## Overview
 
@@ -57,7 +62,7 @@ If the user asks for a dry run, no-browser mode, preview only, or explicitly for
 
 Use this order:
 
-1. **webwright** for planning, reusable script shape, checkpoints, screenshots, logs, and final verification structure. Use `WORKSPACE_DIR=~/.gstack/runs/luma-connpass-event/<timestamp>-<platform>` unless the user asks for repo-local artifacts.
+1. **webwright** for planning, reusable script shape, checkpoints, screenshots, logs, and final verification structure. Use `WORKSPACE_DIR=~/.gstack/runs/event-creator/<timestamp>-<platform>` unless the user asks for repo-local artifacts.
 2. **Browser Use CLI / browser-harness** for logged-in local Chrome actions. This is the default for Luma and connpass creation because webwright's fresh Firefox does not have the user's logged-in session.
 3. **gstack browse** only for quick visual QA or screenshot support when it is already the available browser surface.
 

@@ -19,7 +19,7 @@ Detailed guides for every gstack skill — philosophy, workflow, and examples.
 | [`/qa-only`](#qa) | **QA Reporter** | Same methodology as /qa but report only. Use when you want a pure bug report without code changes. |
 | [`/scrape`](#scrape) | **Browser Data Extractor** | Pull data from a web page. First call prototypes via `$B`; subsequent calls on a matching intent run a codified browser-skill in ~200ms. |
 | [`/skillify`](#skillify) | **Skill Codifier** | Walks back through your conversation, finds the last `/scrape` prototype, synthesizes script + test + fixture, runs the test, asks before committing. |
-| [`/luma-connpass-event`](#luma-connpass-event) | **Event Publisher** | Create Luma and connpass event drafts from rough event info, including timetable copy, screenshots, and publish safety gates. |
+| [`/event-creator`](#event-creator) | **Event Publisher** | Create Luma and connpass event drafts from rough event info, including timetable copy, screenshots, and publish safety gates. |
 | [`/ship`](#ship) | **Release Engineer** | Sync main, run tests, audit coverage, push, open PR. Bootstraps test frameworks if you don't have one. One command. |
 | [`/land-and-deploy`](#land-and-deploy) | **Release Engineer** | Merge the PR, wait for CI and deploy, verify production health. One command from "approved" to "verified in production." |
 | [`/canary`](#canary) | **SRE** | Post-deploy monitoring loop. Watches for console errors, performance regressions, and page failures using the browse daemon. |
@@ -893,7 +893,7 @@ For the full command reference, see [BROWSER.md](../BROWSER.md).
 
 ---
 
-## `/luma-connpass-event`
+## `/event-creator`
 
 This is the authenticated event-page creation workflow for Luma and connpass.
 
