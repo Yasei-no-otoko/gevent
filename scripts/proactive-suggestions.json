@@ -163,6 +163,11 @@
       "routing": "Review, search, prune, and export what gstack\nhas learned across sessions. Use when asked to \"what have we learned\",\n\"show learnings\", \"prune stale learnings\", or \"export learnings\".\nProactively suggest when the user asks about past patterns or wonders\n\"didn't we fix this before?\"",
       "voice_line": null
     },
+    "luma-connpass-event": {
+      "lead": "Create gstack Luma and connpass event pages from event details, including timetable sections.",
+      "routing": "Use when the user asks to make, draft, publish, or update an event page on Luma,\nconnpass, lu.ma, or connpass.com from structured or rough event information;\nwhen they want Browser Use, browser-harness, webwright, or a logged-in browser\nsession used for event-page creation; or when they need the same event mirrored\nacross Luma and connpass.",
+      "voice_line": null
+    },
     "make-pdf": {
       "lead": "Turn any markdown file into a publication-quality PDF.",
       "routing": "Proper 1in margins,\nintelligent page breaks, page numbers, cover pages, running headers, curly\nquotes and em dashes, clickable TOC, diagonal DRAFT watermark. Not a draft\nartifact — a finished artifact. Use when asked to \"make a PDF\", \"export to\nPDF\", \"turn this markdown into a PDF\", or \"generate a document\".",
